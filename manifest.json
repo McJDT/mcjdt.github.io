@@ -1,0 +1,19 @@
+{
+  "sections": [
+    {
+      "title": "About Me",
+      "path": "content/about.md",
+      "id": "about"
+    },
+    {
+      "title": "Socials",
+      "path": "content/socials.md",
+      "id": "socials"
+    },
+    {
+      "title": "Projects",
+      "path": "content/projects.md",
+      "id": "projects"
+    }
+  ]
+}
