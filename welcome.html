@@ -110,21 +110,17 @@
             <a href="https://discord.gg/SbQ9qDGSHX" class="social-link">Discord</a>
         </div>
 
-        <a href="./" class="back-link">← Back to portfolio</a>
+        <a href="/" class="back-link">← Back to main site</a>
     </div>
 
     <script>
-        function init() {
-            const params = new URLSearchParams(window.location.search);
-            const name = params.get('name');
+        const params = new URLSearchParams(window.location.search);
+        const name = params.get('name');
 
-            if (name) {
-                document.getElementById('visitor-name').textContent = name;
-                document.title = `Welcome ${name}`;
-            }
+        if (name) {
+            document.getElementById('visitor-name').textContent = name;
+            document.title = `Welcome ${name}`;
         }
-
-        window.addEventListener('load', init);
     </script>
 </body>
 </html>
