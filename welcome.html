@@ -115,9 +115,12 @@
 
     <script>
         const params = new URLSearchParams(window.location.search);
-        const name = params.get('name');
+        let name = params.get('name');
 
         if (name) {
+            if (name.endsWith('.json')) {
+                name = name.slice(0, -5);
+            }
             document.getElementById('visitor-name').textContent = name;
             document.title = `Welcome ${name}`;
         }
